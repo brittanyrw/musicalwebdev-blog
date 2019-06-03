@@ -9,7 +9,7 @@ html {
   -webkit-text-size-adjust: 100%;
   box-sizing: border-box;
   font-size: 62.5%;
-  background: #ffffff;
+  background: black;
 }
 
 body {
@@ -24,10 +24,12 @@ body {
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', sans-serif;
   height: 100%;
-  background: #ffffff;
+  background: black;
 
-  color: rgba(0, 0, 0, 0.84);
+  color: #FFC96B;
   text-rendering: optimizeLegibility;
+  border: 2px solid #FFC96B;
+  margin: 20px;
 }
 
 h1,
@@ -37,7 +39,7 @@ i,
 a,
 .first-letter,
 .authorName a {
-  color: rgba(0, 0, 0, 0.84);
+  color: #FFC96B;
   text-rendering: optimizeLegibility;
 }
 

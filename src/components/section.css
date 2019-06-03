@@ -6,6 +6,8 @@
 
 .container.small {
   max-width: 700px;
+  border: 2px solid #FFC96B;
+  margin-bottom: 1.5em;
 }
 
 .center {
@@ -13,4 +15,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+section:first-child .container.small {
+  border: 0;
 }

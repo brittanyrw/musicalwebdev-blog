@@ -1,8 +1,7 @@
 .blog-listing {
   display: block;
-  margin-top: 2em;
-  margin-bottom: 2em;
   text-decoration: none;
+  margin: 0;
 }
 
 .blog-listing p {
@@ -10,5 +9,13 @@
 }
 
 .blog-listing h1 {
-  margin-bottom: 1rem;
+  background-color: #FFC96B;
+  color: black;
+  margin: 0;
+  font-size: 40px;
+  padding: 20px;
+}
+
+.blog-listing-content {
+  padding: 20px;
 }

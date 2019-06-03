@@ -13,20 +13,22 @@ import './blog-listing.css'
 const BlogIndexPage = ({ data: { allMdx } }) => (
   <Layout>
     <SEO />
-    <Section centered>
+    <Section>
       <MainBio />
     </Section>
 
     {allMdx.nodes.map(post => (
-      <Section key={post.fields.slug} name={post.fields.slug} centered>
+      <Section key={post.fields.slug} name={post.fields.slug} blog>
         <Link to={post.fields.slug} className="blog-listing">
           <h1>{post.frontmatter.title}</h1>
-          <p>
-            {formatPostDate(post.frontmatter.date)}
-            {` • ${formatReadingTime(post.timeToRead)}`}
-          </p>
-          <Pills items={post.frontmatter.categories} />
-          <p>{post.frontmatter.description}</p>
+          <div className="blog-listing-content">
+            <p>
+              {formatPostDate(post.frontmatter.date)}
+              {` ${formatReadingTime(post.timeToRead)}`}
+            </p>
+            <Pills items={post.frontmatter.categories} />
+            <p>{post.frontmatter.description}</p>
+          </div>
         </Link>
       </Section>
     ))}

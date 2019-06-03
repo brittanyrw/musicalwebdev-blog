@@ -89,7 +89,8 @@ function Bio() {
       }}
     >
       <div className="main-bio">
-        <h1 style={{ marginBottom: '0.875rem' }}>{author}</h1>
+        <h1 style={{ marginBottom: '0.875rem' }}>Musical Web Dev</h1>
+        <p style={{ marginBottom: '0.875rem' }}>{author}</p>
         <ul className="horizontal-links" style={{ marginBottom: '0.875rem' }}>
           {Object.keys(social).map(s =>
             social[s] ? (
@@ -105,22 +106,7 @@ function Bio() {
             ) : null
           )}
         </ul>
-        <p>{bio}</p>
       </div>
-      <Image
-        className="avatar"
-        fixed={avatar.childImageSharp.fixed}
-        alt={author}
-        style={{
-          marginBottom: 0,
-          minWidth: 150,
-          borderRadius: '100%',
-          border: '8px solid lavender',
-        }}
-        imgStyle={{
-          borderRadius: '50%',
-        }}
-      />
     </div>
   )
 }

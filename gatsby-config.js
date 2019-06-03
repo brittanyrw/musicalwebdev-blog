@@ -1,26 +1,19 @@
 const mdxFeed = require('gatsby-mdx/feed')
 
 const configuration = {
-  // the name of your website
-  title: 'Brittany Walker',
-  // the description of the website (eg. what shows on Google)
-  description: "Brittany Walker's blog",
-  // a short bio shown at the bottom of your blog posts
-  // It should complete the sentence: Written by Brittany Walker ...
+  title: 'Musical Web Dev Blog - Brittany Walker',
+  description: "Musical Web Dev Blog is Brittany Walker's web development, coding and design blog.",
   shortBio: '',
-  // a longer bio showing on the landing page of the blog
   bio: `Github: https://github.com/brittanyrw Twitter: @musicalwebdev.`,
   author: 'Brittany Walker',
   githubUrl: 'https://github.com/brittanyrw/musicalwebdev-blog',
-  // replace this by the url where your website will be published
   siteUrl: 'http://localhost:8000',
   social: {
-    // leave the social media you do not want to appear as empty strings
     twitter: 'musicalwebdev',
     medium: '@brittanyrw',
     facebook: '',
-    github: '',
-    linkedin: '',
+    github: 'brittanyrw',
+    linkedin: 'brittanyrwalker',
     instagram: '',
   },
 }

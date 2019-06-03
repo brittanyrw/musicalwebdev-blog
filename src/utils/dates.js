@@ -6,7 +6,7 @@ export function formatReadingTime(minutes) {
       .fill("🍱")
       .join("")} ${minutes} min read`
   }
-  return `${new Array(cups || 1).fill("☕️").join("")} ${minutes} min read`
+  return `${new Array(cups || 1).fill("⭐").join("")} ${minutes} min read`
 }
 
 export function formatPostDate(date) {
